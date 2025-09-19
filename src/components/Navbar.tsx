@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-heading">Panti Wredha Budi Dharma Kasih</h1>
         <ul className="flex space-x-6">
-          {['Home', 'Sejarah', 'Visi & Misi', 'Media', 'Kontak'].map((item, index) => (
+          {['Home', 'Sejarah', 'Visi & Misi', 'Aktivitas', 'Kontak'].map((item, index) => (
             <motion.li
               key={item}
               whileHover={{ scale: 1.1, color: '#D4A017' }}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+
 const Hero: React.FC = () => {
   return (
     <motion.section
@@ -8,7 +9,7 @@ const Hero: React.FC = () => {
       className="relative h-screen bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1617878227827-8360231f7f03?q=80&w=1256&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", // Elderly care stock image
+           'url("/picture.png")'
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

@@ -5,12 +5,15 @@ import History from './components/History';
 import VisionMission from './components/VisionMission';
 import Media from './components/Media';
 import Footer from './components/Footer';
+import Moto from './components/Moto';
 
 const App: React.FC = () => {
   return (
     <div className="relative">
       <Navbar />
       <Hero />
+      <div className="my-10"></div>
+      <Moto/>
       <History />
       <VisionMission />
       <Media />

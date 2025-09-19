@@ -12,10 +12,11 @@ const Media: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Media & Video
+          Aktivitas Kami
         </motion.h2>
-        <div className="section-divider" />
+        <div className="section-divider mx-auto mb-12 w-16 h-1 bg-white rounded"></div>
         <div className="grid md:grid-cols-2 gap-8">
+          {/* Local Video */}
           <motion.div
             className="relative aspect-video rounded-lg overflow-hidden shadow-soft"
             whileHover={{ scale: 1.03 }}
@@ -25,11 +26,12 @@ const Media: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <video controls className="w-full h-full object-cover">
-              <source src="/video-panti.mp4" type="video/mp4" /> {/* Replace with real video path */}
+              <source src="/video-panti.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-opacity" />
           </motion.div>
+
+          {/* YouTube Video */}
           <motion.div
             className="relative aspect-video rounded-lg overflow-hidden shadow-soft"
             whileHover={{ scale: 1.03 }}
@@ -40,12 +42,11 @@ const Media: React.FC = () => {
           >
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/FhXcO8ukaGQ?si=8su-gh6q1EgZvwiO"
+              src="https://www.youtube.com/embed/FhXcO8ukaGQ?autoplay=0&rel=0"
               title="Panti Wredha Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-opacity" />
           </motion.div>
         </div>
         <motion.div
@@ -57,10 +58,9 @@ const Media: React.FC = () => {
         >
           <h3 className="text-2xl font-heading mb-6 text-charcoal">Ikuti Kami di Instagram</h3>
           <div className="max-w-lg mx-auto">
-            {/* Replace with real Instagram post embed URL from Instagram's Embed feature */}
             <iframe
               className="w-full h-96 rounded-lg"
-              src="https://www.instagram.com/p/POST_ID/embed" // Replace POST_ID with real Instagram post ID
+              src="https://www.instagram.com/p/DOxK7Mtj6n6/embed" 
               title="Instagram Post"
               allowTransparency
               allowFullScreen
